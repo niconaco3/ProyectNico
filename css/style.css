@@ -1,0 +1,854 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+/* font-family: 'Oswald', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+.logo span{
+    color: #333;
+}
+main{
+    height: 450px;
+    width: 100%;
+    background-image: url(../img/hasta-quinto-grado-gustavo-fue-a-un-colegio-del-4CL4R4CHOZGE3OZ5QGUYKAOBSQ.avif);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.historiaCerati{
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border: 3px solid rgb(136, 34, 8);
+
+}
+.barra{
+    display: flex;
+    display: inline-block;
+    font-size: 20px;
+    border: solid 5px;
+    padding: 4px;
+}
+
+.barra ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.barra a{
+    color: #000;
+    text-decoration: none;
+}
+
+.barra a:hover{
+    color: #fffefec2;
+}
+.historiaCerati h4{
+    color:rgb(136, 34, 8);
+    font-size: 33px;
+}
+.historiaCerati p{
+    margin-bottom: 20px;
+}
+.historiaCerati a{
+    padding: 10px 20px;
+    background-color: rgb(136, 34, 8);
+    color: #fff;
+    text-decoration: none;
+}
+
+h2{
+    text-align: center;
+    background-color: rgb(136, 34, 8);
+    padding: 15px;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+    font-size: 35px;
+    border: 5px solid #000;
+}
+
+.quienSoy{
+    width: 100%;
+    background-color: #333;
+    display: flex;
+}
+
+.qnIzquierda{
+    width: 100%;
+    min-height: 250px;
+    background-color: #333;
+    background-image: url(../img/unnamed.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.qnDerecha{
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.qnDerecha h3{
+    color: rgb(136, 34, 8);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.galeria{
+    width: 100%;
+    height: auto;
+    background-color: rgb(136, 34, 8);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 400px);
+    padding: 20px;
+    grid-gap: 20px;
+}
+.item{
+    border: 5px solid #000;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.item1{
+    background-image: url(../img/fotonico1.png);
+}
+
+.item2{
+    background-image: url(../img/fotonico2.png);
+}
+
+.item3{
+    background-image: url(../img/fotonico3.png);
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.redes{
+    margin-top: 10px;
+}
+
+footer a{
+    color: rgb(136, 34, 8);
+    text-decoration: none;
+    font-size: 30px;
+    letter-spacing: 15px;
+}
+@media only screen and (max-width:640px) {
+    .quienSoy{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (min-width:480px) {
+    .galeria{
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(3, 400px);
+
+    }
+   
+    .nleft, .nright{
+        width: 50%;
+    }
+}
+@media only screen and (min-width:510px) and (max-width:848px) {
+    .galeria{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .item1{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .item2{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .item3{
+        grid-column: 1/4;
+        grid-row: 2/4;
+    }
+}
+@media only screen and (min-width:1024px) {
+    .galeria{
+        grid-template-columns: repeat(4, 1fr) ;
+    }
+    .item1{
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+    .item2{
+        grid-column: 3/5;
+        grid-row: 1/3;
+    }
+    .item3{
+        grid-column: 1/5;
+        grid-row: 3/5;
+    }
+}
+.galeriaCerati{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 500px);
+    background-color: #ffffff;
+    gap: 10px;
+    padding: 20px;
+}
+h1{
+    color: rgb(136, 34, 8);
+    text-align: center;
+    background-color: #ffffff;
+    padding: 5px;
+}
+.gItem{
+    border: 5px solid rgb(136, 34, 8);
+    color : #fff;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.gItem1{
+    font-size: 20px;
+    padding: 10px;
+}
+.gItem2 {
+    background-image: url(../img/be69ac64151e59f0fafc244d893d150b.jpg);
+}
+.gItem4{
+    font-size: 20px;
+    padding: 10px;
+}
+.gItem5{
+    font-size: 20px;   
+    padding: 10px;
+}
+.gItem6{
+    background-image: url(../img/ceratia.jpg);
+}
+.gItem7{
+    background-image: url(../img/ceratibebe.jpg)
+}
+.gItem8{
+    font-size: 20px;
+    padding: 10px;
+}
+.sodaStereo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 500px;
+    background-color: #ffffff;
+    margin: 10px;
+}
+.s1{
+    color: #000000;
+    background-color: rgb(180, 178, 178);
+    border: 5px solid rgb(34, 121, 53);
+    margin: 15px;
+    padding: 22px;
+    border-radius: 10px;
+}
+.s2{
+    background-image: url(../img/soda-stereo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.s3{
+    color: #000;
+    background-color: rgba(180, 178, 178);
+    border: 5px solid rgb(31, 121,53);
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.nadaPersonal{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 500px;
+    background-color: #ffffff;
+    margin: 10px;
+}
+.n1{
+    color: #101fee;
+    background-color: #000000da;
+    border: 5px solid rgb(176, 75, 185);
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.n2{
+    background-image: url(../img/soda-stereo-nada-personal-cd-nuevo-cerrado-D_NQ_NP_820315-MLA26657051679_012018-F.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.n3{
+    color: #101fee;
+    background-color: #000000da;
+    border: 5px solid rgb(176, 75, 185);
+    margin: 15px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.signos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 500px;
+    background-color: #ffffff;
+    margin: 10px;
+}
+.g1{
+    color: #b5c022;
+    background-color: #ffffffad;
+    border: 5px solid rgb(168, 43, 158);
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.g2{
+    background-image: url(../img/Soda-Stereo_Signos_portada.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.g3{
+    color: #b5c022;
+    background-color: #ffffffad;
+    border: 5px solid rgb(168, 43, 158);
+    margin: 15px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.dobleVida{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 500px;
+    background-color: #ffffff;
+    margin: 10px;
+}
+.v1{
+    color: #000000;
+    background-color: #aca9a96b;
+    border: 5px solid rgb(0, 0, 0);
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.v2{
+    background-image: url(../img/Doble_vida_cover_sodastereo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.v3{
+    color: #000;
+    background-color: #aca9a96b;
+    border: 5px solid #000;
+    margin: 15px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.cancionAnimal{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 500px;
+    background-color: #ffffff;
+    margin: 10px;
+}
+.c1{
+    color: #ff9305;
+    background-color: #000000da;
+    border: 5px solid rgb(253, 128, 26);
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.c2{
+    background-image: url(../img/cancion-animal-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.c3{
+    color: #ff9305;
+    background-color: #000000da;
+    border: 5px solid rgb(253, 128, 26);
+    margin: 15px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.dynamo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 500px;
+    background-color: #ffffff;
+    margin: 10px;
+}
+.d1{
+    color: #b12222;
+    background-color: #000000da;
+    border: 5px solid #b12222;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.d2{
+    background-image: url(../img/dynamo.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.d3{
+    color: #b12222;
+    background-color: #000000da;
+    border: 5px solid #b12222;
+    margin: 15px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.sueñoStereo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 500px;
+    background-color: #ffffff;
+    margin: 10px;
+}
+.u1{
+    color: #e9e8e8;
+    background-color: #161515d8;
+    border: 5px solid #afafaf;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.u2{
+    background-image: url(../img/888751012110.png);
+    background-size: cover;
+    background-position: center;
+}
+.u3{
+    color: #e9e8e8;
+    background-color: #161515d8;
+    border: 5px solid #afacac;
+    margin: 15px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.amorAmarillo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 500px;
+    background-color: #ffffff;
+    margin: 10px;
+}
+.a1{
+    color: #e9e8e8;
+    background-color: #a0a14d;
+    border: 5px solid #fbff00;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.a2{
+    background-image: url(../img/Amor_amarillo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.a3{
+    color: #e9e8e8;
+    background-color: #94964d;
+    border: 5px solid #fbff00;
+    margin: 15px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.bocanada{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 500px;
+    background-color: #ffffff;
+    margin: 10px;
+}
+.b1{
+    color: #000;
+    background-color: #1945d6d7;
+    border: 5px solid #1027ff;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.b2{
+    background-image: url(../img/ab67616d0000b2731152471596980e1bba03b6ab.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.b3{
+    color: #000;
+    background-color: #1945d6d7;
+    border: 5px solid #1027ff;
+    margin: 15px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.siempreHoy{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 500px;
+    background-color: #ffffff;
+    margin: 10px;
+}
+.h1{
+    color: #fc4700;
+    background-color: #ffffffa9;
+    border: 5px solid #fc4700;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.h2{
+    background-image: url(../img/Siempreeshoy.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.h3{
+    color: #fc4700;
+    background-color: #ffffffa9;
+    border: 5px solid #fc4700;
+    margin: 15px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.ahiVamos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 500px;
+    background-color: #ffffff;
+    margin: 10px;
+}
+.i1{
+    color: #1a1717;
+    background-color: #ffffffcc;
+    border: 5px solid #1a1717;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.i2{
+    background-image: url(../img/ab67616d0000b273d543f7c7de880da5370922c0.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.i3{
+    color: #1a1717;
+    background-color: #ffffffcc;
+    border: 5px solid #1a1717;
+    margin: 15px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.fuerzaNatural{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 500px;
+    background-color: #ffffff;
+    margin: 10px;
+}
+.z1{
+    color: #a84b15;
+    background-color: #39704ab9;
+    border: 5px solid #a84b15;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.z2{
+    background-image: url(../img/ab67616d0000b27314653b83cd7d851accdb5142.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.z3{
+    color: #a84b15;
+    background-color: #39704ab9;
+    border: 5px solid #a84b15;
+    margin: 15px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.hoyEsSiempre{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 500px;
+        background-color: #ffffff;
+        margin: 10px;
+    }
+.r1{
+        color: #fc4700;
+        background-color: #ffffffa9;
+        border: 5px solid #fc4700;
+        margin: 20px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+.r2{
+        background-image: url(../img/Siempreeshoy.PNG);
+        background-size: cover;
+        background-position: center;
+    }
+.r3{
+        color: #fc4700;
+        background-color: #ffffffa9;
+        border: 5px solid #fc4700;
+        margin: 15px;
+        padding: 30px;
+        border-radius: 10px;
+    }
+@media only screen and (max-width:880px) {
+    .sodaStereo{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 400px);
+       
+    }
+    .s1{
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+    .s2{
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+    .s3{
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+    .nadaPersonal{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 400px);
+       
+    }
+    .n1{
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+    .n2{
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+    .n3{
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+    .signos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 400px);
+       
+    }
+    .g1{
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+    .g2{
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+    .g3{
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+    .dobleVida{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 400px);
+       
+    }
+    .v1{
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+    .v2{
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+    .v3{
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+    .cancionAnimal{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 400px);
+       
+    }
+    .c1{
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+    .c2{
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+    .c3{
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+    .dynamo{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 400px);
+       
+    }
+    .d1{
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+    .d2{
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+    .d3{
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+    .sueñoStereo{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 400px);
+       
+    }
+    .u1{
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+    .u2{
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+    .u3{
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+    .amorAmarillo{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 400px);
+       
+    }
+    .a1{
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+    .a2{
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+    .a3{
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+    .bocanada{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 400px);
+       
+    }
+    .b1{
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+    .b2{
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+    .b3{
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+    .siempreHoy{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 400px);
+       
+    }
+    .h1{
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+    .h2{
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+    .h3{
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+    .ahiVamos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 400px);
+       
+    }
+    .i1{
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+    .i2{
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+    .i3{
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+    .fuerzaNatural{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 400px);
+       
+    }
+    .z1{
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+    .z2{
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+    .z3{
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+   
+    .hoyEsSiempre{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 400px);
+       
+    }
+    .r1{
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+    .r2{
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+    .r3{
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+   
+}
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.redes{
+    margin-top: 10px;
+}
+
+footer a{
+    color: rgb(136, 34, 8);
+    text-decoration: none;
+    font-size: 30px;
+    letter-spacing: 15px;
+}
